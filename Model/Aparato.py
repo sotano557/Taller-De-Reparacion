@@ -22,4 +22,4 @@ class Aparato():
     
     def entregar():
         pass
-#xd
+#xd dx
