@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Menu</title>
+    <style>
+      .Botones {
+        display: inline;
+        font-size: 40px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+    <body>
+      <div>
+        <h1>Menu de Reparaciones EL DIEGOTECH</h1>
+      </div>
+      <div class="Botones">
+        <form action="{{url_for('aparato_bp.recepcion')}}" method="get">
+          <button type="submit">Recepcion</button>
+        </form>
+        <form action="{{url_for('aparato_bp.entrega')}}" method="get">
+          <button type="submit">Entrega</button>
+        </form>
+        <form action="{{url_for('aparato_bp.diagnostico')}}" method="get">
+          <button type="submit">Diagnostico</button>
+        </form>
+        <form action="{{url_for('estatus')}}" method="get">
+          <button type="submit">Estatus</button>
+        </form>
+      </div>
+    </body>
+  </head>
+</html>

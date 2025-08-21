@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="Login">
+      <h1><i>Inicio de Secion</i></h1>
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+      <form method="post" action="{{url_for("auth_bp.login")}}">
+        <label>usuario</label>
+        <input type="text" id="usuario" name="usuario" />
+        <p></p>
+        <label>contrasena</label>
+        <input type="password" id="contrasena" name="contrasena" />
+        <p></p>
+
+        <input type="submit" value="Iniciar Secion" />
+      </form>
+    </div>
+  </body>
+</html>
